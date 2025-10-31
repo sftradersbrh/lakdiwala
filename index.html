@@ -4,29 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>S F Traders — Premium Timber | Bahraich, U.P.</title>
-  <meta name="description" content="S F Traders — Trusted timber supplier in Bahraich, Uttar Pradesh. Jackfruit, Sagwan, Sheesham, Eucalyptus, Jamun & Aam wood." />
+  <meta name="description" content="S F Traders — Trusted timber supplier in Bahraich, Uttar Pradesh." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            wood: {
-              50: '#f3efe9',100:'#e6dfcf',200:'#d1bfa0',300:'#b69270',400:'#9b6b44',
-              500:'#7b4824',600:'#5f351a',700:'#492610',800:'#321907',900:'#1b0f03'
-            }
-          }
-        }
-      }
-    }
-  </script>
   <style>
     html{scroll-behavior:smooth;}
-    .banner{
-      background-image:url('https://images.unsplash.com/photo-1523419409541-3199b8e8bff5?auto=format&fit=crop&w=1600&q=80');
-      background-size:cover;background-position:center;
-    }
-    .banner .overlay{background:linear-gradient(rgba(6,3,2,0.55),rgba(6,3,2,0.55));}
+    .banner{background-size:cover;background-position:center;min-height:320px;}
+    .overlay{background:linear-gradient(rgba(6,3,2,0.55),rgba(6,3,2,0.55));min-height:320px;}
     .logo-title{font-family:'Georgia',serif;font-weight:800;font-size:36px;color:#f5ead2;text-shadow:0 3px 10px rgba(0,0,0,0.6);}
     .logo-tag{font-family:'Trebuchet MS',sans-serif;font-size:14px;color:#f0e6d1;margin-top:6px;opacity:0.95;}
     .btn-enquire{display:inline-block;margin-top:8px;background-color:#7b4824;color:#fff;padding:6px 14px;border-radius:6px;text-decoration:none;}
@@ -35,8 +18,7 @@
 </head>
 <body class="bg-wood-900 text-gray-100">
 
-<!-- Header -->
-<header class="banner">
+<header id="site-banner" class="banner" style="background-image:url('https://images.unsplash.com/photo-1523419409541-3199b8e8bff5?auto=format&fit=crop&w=1600&q=80');">
   <div class="overlay">
     <div class="max-w-6xl mx-auto px-6 py-24 flex flex-col items-center text-center">
       <div class="p-4 rounded-md">
@@ -48,91 +30,94 @@
         <a href="#about" class="mx-3 text-wood-100 hover:underline">About</a>
         <a href="#products" class="mx-3 text-wood-100 hover:underline">Products</a>
         <a href="#contact" class="mx-3 text-wood-100 hover:underline">Contact</a>
+        <a href="admin.html" class="mx-3 text-wood-100 hover:underline">Admin</a>
       </nav>
     </div>
   </div>
 </header>
 
-<!-- Home -->
-<section id="home" class="max-w-6xl mx-auto px-6 py-12 text-center">
-  <h2 class="text-4xl font-bold text-white">Natural Wood. Honest Prices.</h2>
-  <p class="mt-4 text-wood-200">Supplying premium timber — Jackfruit, Sagwan, Sheesham, Eucalyptus, Jamun, and Aam wood for furniture & interiors.</p>
-  <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a>
-</section>
+<main class="max-w-6xl mx-auto px-6 py-12">
+  <section id="home" class="text-center">
+    <h2 class="text-4xl font-bold text-white">Natural Wood. Honest Prices.</h2>
+    <p class="mt-4 text-wood-200">Supplying premium timber — Jackfruit, Sagwan, Sheesham, Eucalyptus, Jamun, and Aam wood for furniture & interiors.</p>
+    <a id="enquireTop" href="#" class="btn-enquire">Enquire Now</a>
+  </section>
 
-<!-- About -->
-<section id="about" class="py-12 border-t border-wood-700 max-w-6xl mx-auto px-6">
-  <h3 class="text-2xl font-bold text-white mb-3">About S F Traders</h3>
-  <p class="text-wood-200 leading-relaxed">
-    S F Traders is a trusted timber supplier based in Bahraich, Uttar Pradesh. We specialize in 
-    <b>Jackfruit, Sagwan (Teak), Sheesham, Eucalyptus, Jamun, and Aam (Mango) wood</b>, perfect for 
-    furniture, interiors, and construction use. With years of experience, we focus on 
-    <b>honest pricing</b>, <b>custom cutting</b>, and <b>on-time delivery</b>. 
-    Our goal is to provide carpenters, builders, and households with premium-quality timber 
-    at fair prices.
-  </p>
-</section>
+  <section id="about" class="py-12 border-t border-wood-700">
+    <h3 class="text-2xl font-bold text-white mb-3">About S F Traders</h3>
+    <p class="text-wood-200 leading-relaxed">
+      S F Traders is a trusted timber supplier based in Bahraich, Uttar Pradesh. We specialize in 
+      <b>Jackfruit, Sagwan (Teak), Sheesham, Eucalyptus, Jamun, and Aam (Mango) wood</b>, perfect for 
+      furniture, interiors, and construction use. With years of experience, we focus on 
+      <b>honest pricing</b>, <b>custom cutting</b>, and <b>on-time delivery</b>.
+    </p>
+  </section>
 
-<!-- Products -->
-<section id="products" class="py-12 border-t border-wood-700 max-w-6xl mx-auto px-6">
-  <h3 class="text-2xl font-bold text-white mb-3">Our Wood Collection</h3>
-  <p class="text-wood-200 mb-6">Click “Enquire Now” to connect with us on WhatsApp.</p>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Jackfruit wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Jackfruit Wood</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
+  <section id="products" class="py-12 border-t border-wood-700">
+    <h3 class="text-2xl font-bold text-white mb-3">Our Wood Collection</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="productsGrid">
     </div>
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1505691723518-36a29b2b1d96?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Teak wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Sagwan (Teak)</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
-    </div>
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1627483269059-1fa16e47cfb5?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Sheesham wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Sheesham Wood</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
-    </div>
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1595433707802-6c7e2b74e8b5?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Eucalyptus wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Eucalyptus Wood</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
-    </div>
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1604480842560-6d2f923d90dc?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Jamun wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Jamun Wood</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
-    </div>
-    <div class="bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow">
-      <img src="https://images.unsplash.com/photo-1577985051167-6e35d7cdbd74?auto=format&fit=crop&w=1200&q=80" class="w-full h-44 object-cover" alt="Mango wood">
-      <div class="p-3 text-center"><h4 class="font-semibold text-white">Aam (Mango) Wood</h4>
-        <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Enquire Now</a></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-12 border-t border-wood-700 text-center max-w-6xl mx-auto px-6">
-  <h3 class="text-2xl font-bold text-white mb-3">Contact Us</h3>
-  <p class="text-wood-200">Reach out for samples, pricing, or delivery queries.</p>
-  <div class="mt-4 text-wood-200 space-y-2">
-    <p>📍 S F Traders, Bahraich, Uttar Pradesh</p>
-    <p>📞 +91 98384 48737</p>
-    <p>📧 <a href="mailto:sftradersbrh@gmail.com" class="underline text-wood-100">sftradersbrh@gmail.com</a></p>
-    <p>🕒 Mon – Sat: 9:00 AM – 7:00 PM</p>
-  </div>
-  <div class="mt-6">
-    <a href="https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates" class="btn-enquire">Chat on WhatsApp</a>
-  </div>
-</section>
+  <section id="contact" class="py-12 border-t border-wood-700 text-center">
+    <h3 class="text-2xl font-bold text-white mb-3">Contact Us</h3>
+    <p class="text-wood-200">Reach out for samples, pricing, or delivery queries.</p>
+    <div class="mt-4 text-wood-200 space-y-2">
+      <p>📍 S F Traders, Bahraich, Uttar Pradesh</p>
+      <p>📞 +91 98384 48737</p>
+      <p>📧 <a href="mailto:sftradersbrh@gmail.com" class="underline text-wood-100">sftradersbrh@gmail.com</a></p>
+      <p>🕒 Mon – Sat: 9:00 AM – 7:00 PM</p>
+    </div>
+    <div class="mt-6">
+      <a id="enquireContact" href="#" class="btn-enquire">Chat on WhatsApp</a>
+    </div>
+  </section>
+</main>
 
-<!-- Footer -->
 <footer class="bg-wood-800 text-wood-200 py-6 mt-12 text-center">
   <div class="font-semibold">S F Traders — Bahraich, U.P.</div>
   <div class="text-sm opacity-80">© <span id="year"></span> S F Traders — All rights reserved</div>
 </footer>
 
-<script>
+<script type="module">
+  import initializeApp from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js';
+  import {{ getAuth, onAuthStateChanged }} from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js';
+  import {{ getStorage, ref, getDownloadURL }} from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-storage.js';
+
+  const firebaseConfig = {"apiKey": "AIzaSyDVDQboS2LzviGSz3D2hlwEvojZGFcvVPA", "authDomain": "sflakdiwala.firebaseapp.com", "projectId": "sflakdiwala", "storageBucket": "sflakdiwala.appspot.com", "messagingSenderId": "21729827773", "appId": "1:21729827773:web:64181ec4b6cdcff544d0d4", "measurementId": "G-W8MV1BW0XJ"};
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const storage = getStorage(app);
+
+  const products = ['jackfruit','sagwan','sheesham','eucalyptus','jamun','aam'];
+  const productsGrid = document.getElementById('productsGrid');
+  const whatsappBase = 'https://wa.me/919838448737?text=Hello%20S%20F%20Traders,%20I%20want%20to%20enquire%20about%20wood%20rates';
+
+  document.getElementById('enquireTop').href = whatsappBase;
+  document.getElementById('enquireContact').href = whatsappBase;
+
+  async function loadImages() {
+    for (const p of products) {
+      const imgRef = ref(storage, `images/${p}.jpg`);
+      let imgUrl = 'https://images.unsplash.com/photo-1523419409541-3199b8e8bff5?auto=format&fit=crop&w=800&q=60';
+      try { imgUrl = await getDownloadURL(imgRef); } catch(e) { /* no custom image, use default */ }
+      const card = document.createElement('div');
+      card.className = 'bg-wood-800/30 rounded-lg overflow-hidden border border-wood-700 shadow';
+      card.innerHTML = `
+        <img src="${imgUrl}" class="w-full h-44 object-cover" alt="${p}">
+        <div class="p-3 text-center"><h4 class="font-semibold text-white">${p.charAt(0).toUpperCase() + p.slice(1)} Wood</h4>
+          <a href="${whatsappBase}" class="btn-enquire">Enquire Now</a></div>
+      `;
+      productsGrid.appendChild(card);
+    }
+    try {
+      const bannerUrl = await getDownloadURL(ref(storage,'banner.jpg'));
+      document.getElementById('site-banner').style.backgroundImage = `url('${bannerUrl}')`;
+    } catch(e) {}
+  }
+
+  loadImages();
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
